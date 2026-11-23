@@ -68,10 +68,21 @@ messages/
 - **Componentes de seção**: 1 arquivo por seção em `components/`, montados em ordem
   em `app/[locale]/page.tsx`.
 - **shadcn/ui** (`components/ui/`) são primitivos — preferir compor por cima a editar.
+- **Página nova = rota do Next**, nunca HTML solto em `public/`. Cria
+  `app/[locale]/<rota>/page.tsx` + componentes em `components/<rota>/` (modelo:
+  `/quiropraxia`), seguindo todas as regras acima. `public/` é só pra assets
+  estáticos (imagens, fontes, ícones).
 
 ## Receitas — mudanças comuns
 
 **Trocar um texto** → acha a chave em `messages/pt.json`, edita lá e em `en.json`.
+
+**Adicionar página nova** →
+1. cria `app/[locale]/<rota>/page.tsx` (metadata própria, `await params`)
+2. componentes em `components/<rota>/`; parte interativa em client component,
+   lógica pura em `lib/<rota>.ts`
+3. chaves em `messages/pt.json` + `en.json` (namespace `<rota>`)
+4. nada de rewrite em `next.config.mjs` nem exceção no `proxy.ts`
 
 **Adicionar seção nova** →
 1. cria `components/nova-section.tsx` (server component, lê translations)
