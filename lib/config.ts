@@ -16,3 +16,7 @@ export const WHATSAPP_QUIRO_URL = `${WHATSAPP_BASE}${encodeURIComponent(
 )}`
 
 export const INSTAGRAM_URL = "https://instagram.com/dr.guilhermecarvalho"
+
+export const WHATSAPP_LAUDO_URL = `${WHATSAPP_BASE}${encodeURIComponent(
+  "Olá, Dr. Guilherme! Vim pelo tradutor de laudo e gostaria de agendar uma consulta."
+)}`

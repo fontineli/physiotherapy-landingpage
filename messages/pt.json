@@ -512,5 +512,98 @@
       "copyright": "Todos os direitos reservados.",
       "backHome": "Página inicial"
     }
+  },
+  "laudo": {
+    "metadata": {
+      "title": "Tradutor de laudo da coluna | Dr. Guilherme Carvalho",
+      "description": "Cole o texto do seu laudo de ressonância ou tomografia da coluna e entenda, em palavras simples, o que ele tem a ver com o que você sente."
+    },
+    "heroTags": {
+      "hernia": "Hérnia de disco",
+      "sciatic": "Ciático",
+      "protrusion": "Protrusão"
+    },
+    "eyebrow": "Dr. Guilherme Carvalho · Fisioterapeuta de coluna",
+    "title": "Tradutor de laudo da coluna",
+    "lead": "Cole o que está escrito no seu laudo de ressonância ou tomografia. Eu explico, em palavras simples, o que ele tem a ver com o que você sente.",
+    "form": {
+      "label": "Coloque aqui o que deu no seu laudo",
+      "placeholder": "Copie e cole o texto do laudo, principalmente a parte da conclusão. Ou digite as palavras que aparecem nele.",
+      "submit": "Traduzir meu laudo",
+      "example": "Ver um exemplo",
+      "clear": "Limpar",
+      "privacy": "O texto do seu laudo não é enviado nem guardado: tudo acontece no seu celular.",
+      "empty": "Cole ou digite o que está escrito no seu laudo para eu traduzir.",
+      "notFound": "Não reconheci nenhum termo nesse texto. Tente colar a parte de <strong>conclusão</strong> ou <strong>impressão diagnóstica</strong> do laudo."
+    },
+    "result": {
+      "title": "O que o seu laudo explica sobre o que você sente",
+      "found": "Encontrei <strong>{count, plural, one {# achado} other {# achados}}</strong> no seu laudo.",
+      "calm": "<strong>{count}</strong> {count, plural, one {é muito comum} other {são muito comuns}} até em quem não sente nada.",
+      "nerveSection": "O que pode explicar a sua dor",
+      "calmSection": "Achados comuns, que muitas vezes não doem",
+      "again": "Traduzir outro laudo"
+    },
+    "feel": {
+      "title": "Onde a dor pode aparecer",
+      "text": "Pelo seu laudo, o nervo que pode estar irritado é o que sai em {levels}{side}. Quando ele incomoda, a dor, o formigamento ou a dormência costumam seguir este caminho:",
+      "side": {
+        "both": ", dos dois lados",
+        "right": ", do lado direito",
+        "left": ", do lado esquerdo"
+      },
+      "and": " e ",
+      "root": "Raiz {root}",
+      "after": "Se a sua dor segue esse caminho, o laudo combina com o que você sente. Se a dor fica só nas costas, o nervo provavelmente não é o principal responsável.",
+      "note": "O caminho exato varia de pessoa para pessoa. Isso é uma orientação, não um diagnóstico.",
+      "legsLabel": "Desenho da perna mostrando onde a dor pode aparecer",
+      "front": "frente",
+      "back": "atrás"
+    },
+    "good": {
+      "title": "Boa notícia: sem compressão nos nervos",
+      "text": "O seu laudo diz que não há nervo apertado. Se você sente dor, ela costuma responder bem a movimento e tratamento conservador."
+    },
+    "card": {
+      "where": "No seu laudo: {levels}",
+      "feel": "O que você pode sentir",
+      "what": "O que é",
+      "serious": "É grave?"
+    },
+    "alert": {
+      "title": "Quando não esperar",
+      "intro": "Seja qual for o laudo, procure atendimento médico na hora se a dor vier com:",
+      "i1": "Perda de força na perna que vai piorando",
+      "i2": "Dormência na região íntima (entre as pernas)",
+      "i3": "Mudança no controle da urina ou das fezes",
+      "i4": "Febre ou perda de peso sem explicação"
+    },
+    "cta": {
+      "tag": "PRÓXIMO PASSO",
+      "title1": "Você já entendeu o laudo.",
+      "title2": "Agora é hora de tratar.",
+      "photoAlt": "Foto do fisioterapeuta Guilherme Carvalho",
+      "live": "AO VIVO",
+      "name": "Guilherme Carvalho",
+      "role": "Fisioterapeuta especialista em coluna",
+      "cases": "+5.000 atendimentos",
+      "text": "O laudo é só uma parte da história. Na consulta, eu avalio o seu exame junto com o que você sente e como você se movimenta, e monto o tratamento para o seu caso.",
+      "l1": "Avaliação completa por videochamada, 100% ao vivo comigo",
+      "l2": "De qualquer cidade ou país, sem sair de casa",
+      "l3": "Em Natal, também presencial",
+      "l4": "Plano de tratamento feito para o seu caso",
+      "button": "QUERO AGENDAR MINHA CONSULTA",
+      "buttonSub": "Toque aqui e fale comigo no WhatsApp",
+      "note": "Leva menos de 1 minuto para chamar.",
+      "or": "ou, se preferir começar sozinho",
+      "guide": "Prefiro começar em casa",
+      "guideSub": "Guia Hérnia Sem Dor · R$ 19,90",
+      "sticky": "Agendar minha consulta"
+    },
+    "footer": {
+      "disclaimerStrong": "Conteúdo educativo.",
+      "disclaimer": "Não substitui a avaliação individual nem a orientação de quem acompanha o seu caso.",
+      "credit": "Guilherme Carvalho, fisioterapeuta especialista em coluna · @dr.guilhermecarvalho"
+    }
   }
 }

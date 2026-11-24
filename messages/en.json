@@ -512,5 +512,98 @@
       "copyright": "All rights reserved.",
       "backHome": "Home page"
     }
+  },
+  "laudo": {
+    "metadata": {
+      "title": "Spine report translator | Dr. Guilherme Carvalho",
+      "description": "Paste the text of your spine MRI or CT report and understand, in plain words, how it relates to what you feel."
+    },
+    "heroTags": {
+      "hernia": "Disc herniation",
+      "sciatic": "Sciatica",
+      "protrusion": "Protrusion"
+    },
+    "eyebrow": "Dr. Guilherme Carvalho · Spine physiotherapist",
+    "title": "Spine report translator",
+    "lead": "Paste what your MRI or CT report says. I explain, in plain words, how it relates to what you feel. Reports must be in Portuguese.",
+    "form": {
+      "label": "Paste your report here",
+      "placeholder": "Copy and paste the report text, especially the conclusion. Or type the words that appear in it.",
+      "submit": "Translate my report",
+      "example": "See an example",
+      "clear": "Clear",
+      "privacy": "Your report text is never sent or stored: everything happens on your phone.",
+      "empty": "Paste or type what your report says so I can translate it.",
+      "notFound": "I didn't recognize any term in this text. Try pasting the <strong>conclusion</strong> or <strong>diagnostic impression</strong> section of the report."
+    },
+    "result": {
+      "title": "What your report explains about what you feel",
+      "found": "I found <strong>{count, plural, one {# finding} other {# findings}}</strong> in your report.",
+      "calm": "<strong>{count}</strong> {count, plural, one {is very common} other {are very common}} even in people who feel nothing.",
+      "nerveSection": "What may explain your pain",
+      "calmSection": "Common findings that often don't hurt",
+      "again": "Translate another report"
+    },
+    "feel": {
+      "title": "Where the pain may show up",
+      "text": "Based on your report, the nerve that may be irritated is the one exiting at {levels}{side}. When it acts up, pain, tingling or numbness tend to follow this path:",
+      "side": {
+        "both": ", on both sides",
+        "right": ", on the right side",
+        "left": ", on the left side"
+      },
+      "and": " and ",
+      "root": "{root} root",
+      "after": "If your pain follows this path, the report matches what you feel. If the pain stays only in your back, the nerve is probably not the main cause.",
+      "note": "The exact path varies from person to person. This is guidance, not a diagnosis.",
+      "legsLabel": "Leg drawing showing where the pain may show up",
+      "front": "front",
+      "back": "back"
+    },
+    "good": {
+      "title": "Good news: no nerve compression",
+      "text": "Your report says no nerve is being pinched. If you feel pain, it usually responds well to movement and conservative treatment."
+    },
+    "card": {
+      "where": "In your report: {levels}",
+      "feel": "What you may feel",
+      "what": "What it is",
+      "serious": "Is it serious?"
+    },
+    "alert": {
+      "title": "When not to wait",
+      "intro": "Whatever your report says, seek medical care right away if the pain comes with:",
+      "i1": "Leg weakness that keeps getting worse",
+      "i2": "Numbness in the groin area (between the legs)",
+      "i3": "Changes in bladder or bowel control",
+      "i4": "Fever or unexplained weight loss"
+    },
+    "cta": {
+      "tag": "NEXT STEP",
+      "title1": "You understand your report now.",
+      "title2": "Time to treat it.",
+      "photoAlt": "Photo of physiotherapist Guilherme Carvalho",
+      "live": "LIVE",
+      "name": "Guilherme Carvalho",
+      "role": "Spine physiotherapist",
+      "cases": "5,000+ patients seen",
+      "text": "The report is only part of the story. In the consultation, I look at your exam together with what you feel and how you move, and build a treatment for your case.",
+      "l1": "Full assessment by video call, 100% live with me",
+      "l2": "From any city or country, from home",
+      "l3": "In-person in Natal, too",
+      "l4": "Treatment plan made for your case",
+      "button": "BOOK MY CONSULTATION",
+      "buttonSub": "Tap here to talk to me on WhatsApp",
+      "note": "Takes less than a minute.",
+      "or": "or, if you'd rather start on your own",
+      "guide": "I'd rather start at home",
+      "guideSub": "Herniated Disc Guide · R$ 19.90",
+      "sticky": "Book my consultation"
+    },
+    "footer": {
+      "disclaimerStrong": "Educational content.",
+      "disclaimer": "It does not replace an individual assessment or the guidance of whoever is following your case.",
+      "credit": "Guilherme Carvalho, spine physiotherapist · @dr.guilhermecarvalho"
+    }
   }
 }

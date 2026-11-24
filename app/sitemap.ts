@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next"
 const BASE_URL = "https://doutorguilhermecarvalho.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/guia", "/quiropraxia"]
+  const routes = ["", "/guia", "/quiropraxia", "/laudo"]
 
   return routes.map((route) => ({
     url: `${BASE_URL}${route}`,

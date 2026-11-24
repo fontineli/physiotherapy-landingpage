@@ -23,13 +23,15 @@ Código: `lib/analytics.ts` → `track(event, params)` faz `dataLayer.push({ eve
 
 | Evento (dataLayer) | Onde dispara | Params | Mapeamento sugerido (GA4 / Meta / TikTok) |
 |---|---|---|---|
-| `whatsapp_click` | botões WhatsApp (hero, fab, final, triagem); página `/quiropraxia` (header, hero, final_cta, footer) | `location`, `page` (em /quiropraxia) | — / `Contact` / `Contact` |
+| `whatsapp_click` | botões WhatsApp (hero, fab, final, triagem); página `/quiropraxia` (header, hero, final_cta, footer); página `/laudo` (`laudo_cta`, `laudo_sticky`) | `location`, `page` (em /quiropraxia e /laudo) | — / `Contact` / `Contact` |
 | `triage_cta_click` | CTA abrir triagem | `location` | só GA4 |
 | `triage_start` | início do formulário de triagem | — | — / `Lead` / `Subscribe` |
 | `triage_step_complete` | cada passo da triagem | `step` | só GA4 (funil granular) |
 | `triage_complete` | triagem finalizada | — | `generate_lead` / `CompleteRegistration` / `CompleteRegistration` |
 | `quiro_region_select` | lead escolhe onde dói na seção "Onde dói?" (`/quiropraxia`) | `region` (`cervical` \| `ombro` \| `escapulas` \| `lombar` \| `quadril` \| `ciatico` \| `atletas`), `page` | só GA4 (mapa de queixa por lead) |
-| `scroll_depth` | marcos de scroll | `depth` (25/50/75/100), `page` (`main` \| `guia` \| `quiropraxia`) | — / `ScrollDepth` (custom) / `ScrollDepth` |
+| `laudo_translate` | lead clica em traduzir (ou "ver exemplo") no tradutor de laudo (`/laudo`) | `source` (`input` \| `example`), `findings` (nº de achados), `nerve` (bool: laudo aponta nervo), `page` | só GA4 (uso da ferramenta; `source=input` é o lead real) |
+| `guia_click` | link pra `/guia` no CTA do tradutor de laudo | `location` (`laudo_cta`), `page` | só GA4 |
+| `scroll_depth` | marcos de scroll | `depth` (25/50/75/100), `page` (`main` \| `guia` \| `quiropraxia` \| `laudo`) | — / `ScrollDepth` (custom) / `ScrollDepth` |
 | `section_view` | seção entra na tela (guia, /quiropraxia) | `section`, `page` (`guia` \| `quiropraxia`) | — / `SectionView` (custom) / `SectionView` |
 | `add_to_cart` | scroll 75% na guia (proxy alta intenção) | `content_name`, `content_type`, `value`, `currency` | — / `AddToCart` / `AddToCart` |
 | `view_content` | carga da página da guia | `content_name`, `content_category`, `content_type`, `value`, `currency` | — / `ViewContent` / `ViewContent` |

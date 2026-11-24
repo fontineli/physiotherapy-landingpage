@@ -1,0 +1,113 @@
+/* Paleta própria da página /laudo (dark + gold), escopada — não usa tokens globais */
+.laudo {
+  --bg: #0c0c0e; --surface: #16161a; --surface2: #101013; --line: #2a2a30;
+  --ink: #f2efe8; --muted: #a8a398; --gold: #deb036; --gold-soft: rgba(222, 176, 54, .14);
+  --calm: #8cc9a0; --calm-soft: rgba(140, 201, 160, .13); --warn: #e8a05a; --warn-soft: rgba(232, 160, 90, .14);
+  --pain: #e2574c;
+  --display: var(--font-lora), Georgia, serif;
+  --body: var(--font-poppins), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: dark;
+  min-height: 100vh;
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.laudo .wrap { max-width: 640px; margin: 0 auto; padding: 28px 16px 48px; display: flex; flex-direction: column; gap: 22px }
+.laudo .eyebrow { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); font-weight: 600 }
+.laudo h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 8vw, 40px); line-height: 1.1; margin: 6px 0 0; text-wrap: balance }
+.laudo .lead { color: var(--muted); margin: 10px 0 0 }
+.laudo .box { display: flex; flex-direction: column; gap: 10px; background: var(--surface); border: 1.5px solid var(--gold); border-radius: 18px; padding: 16px; box-shadow: 0 0 0 4px rgba(222, 176, 54, .09) }
+.laudo .box label { font-family: var(--display); font-weight: 700; font-size: 21px; color: var(--gold); line-height: 1.2 }
+.laudo .box textarea { background: var(--surface2); border: 1px solid var(--line); border-radius: 12px; color: var(--ink); font: inherit; font-size: 16px; line-height: 1.45; padding: 12px; min-height: 150px; resize: vertical; outline: none; width: 100% }
+.laudo .box textarea:focus { border-color: var(--gold) }
+.laudo .box textarea::placeholder { color: var(--muted) }
+.laudo .go { font: inherit; font-weight: 700; font-size: 17px; color: var(--bg); background: var(--gold); border: 0; border-radius: 14px; padding: 15px; cursor: pointer; box-shadow: 0 10px 26px rgba(222, 176, 54, .28) }
+.laudo .row-links { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap }
+.laudo .linkbtn { font: inherit; font-size: 13.5px; color: var(--muted); background: none; border: 0; text-decoration: underline; cursor: pointer; padding: 2px 0 }
+.laudo .go:focus-visible, .laudo .linkbtn:focus-visible, .laudo .btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px }
+.laudo .privacy { font-size: 12.5px; color: var(--muted); margin: 0 }
+.laudo .msg { margin: 0; font-size: 14.5px; color: var(--warn); background: var(--warn-soft); border-radius: 10px; padding: 10px 12px }
+.laudo .result { display: flex; flex-direction: column; gap: 18px; scroll-margin-top: 12px }
+.laudo .r-head { display: flex; flex-direction: column; gap: 6px }
+.laudo .r-head h2 { font-family: var(--display); font-size: 27px; line-height: 1.15; margin: 0; text-wrap: balance }
+.laudo .r-head p { margin: 0; color: var(--muted) }
+.laudo .r-head p strong { color: var(--ink); font-weight: 600 }
+.laudo .feel { background: linear-gradient(160deg, #211714, #141416); border: 1px solid rgba(226, 87, 76, .45); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 12px }
+.laudo .feel h3 { font-family: var(--display); font-size: 22px; margin: 0; color: #f3a097 }
+.laudo .feel p { margin: 0 }
+.laudo .legs { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center }
+.laudo .legs svg { width: 150px; height: auto; display: block }
+.laudo .roots { display: flex; flex-direction: column; gap: 10px }
+.laudo .root b { display: block; font-size: 14px; color: var(--gold) }
+.laudo .root span { font-size: 14.5px }
+.laudo .feel small { color: var(--muted); font-size: 12.5px }
+.laudo .sec-t { font-family: var(--display); font-size: 20px; margin: 6px 0 -6px; color: var(--gold) }
+.laudo .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px }
+.laudo .card.nerve { border-color: rgba(226, 87, 76, .4) }
+.laudo .c-top { display: flex; flex-direction: column; gap: 4px }
+.laudo .card h4 { font-family: var(--display); font-size: 20px; line-height: 1.2; margin: 0 }
+.laudo .where { font-size: 13px; color: var(--muted) }
+.laudo .pill { align-self: flex-start; font-size: 12.5px; font-weight: 600; border-radius: 999px; padding: 3px 10px }
+.laudo .pill.calm { color: var(--calm); background: var(--calm-soft) }
+.laudo .pill.depends { color: var(--gold); background: var(--gold-soft) }
+.laudo .pill.attn { color: var(--warn); background: var(--warn-soft) }
+.laudo .q { display: flex; flex-direction: column; gap: 2px }
+.laudo .q .l { font-size: 12px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 600 }
+.laudo .q p { margin: 0 }
+.laudo .q.big p { font-size: 16.5px; color: var(--ink) }
+.laudo .q.big .l { color: #f3a097 }
+.laudo .good { background: var(--calm-soft); border: 1px solid rgba(140, 201, 160, .4); border-radius: 16px; padding: 16px }
+.laudo .good h4 { font-family: var(--display); font-size: 20px; margin: 0 0 4px; color: var(--calm) }
+.laudo .good p { margin: 0 }
+.laudo .alert { background: var(--warn-soft); border: 1px solid rgba(232, 160, 90, .35); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px }
+.laudo .alert h3 { font-family: var(--display); font-size: 20px; margin: 0; color: var(--warn) }
+.laudo .alert p { margin: 0 }
+.laudo .alert ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 2px; list-style: disc }
+.laudo .btn { display: flex; align-items: center; gap: 12px; text-decoration: none; border-radius: 14px; padding: 14px 16px; font-weight: 600 }
+.laudo .btn .t { display: flex; flex-direction: column; gap: 2px; flex: 1 }
+.laudo .btn .t small { font-weight: 400; font-size: 13px }
+.laudo .btn.second { border: 1.5px solid var(--gold); color: var(--ink) }
+.laudo .btn.second small { color: var(--muted) }
+.laudo .btn img { width: 44px; height: 44px; border-radius: 4px; object-fit: cover; flex: none }
+.laudo .again { align-self: center }
+.laudo footer { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 4px }
+.laudo footer strong { color: var(--ink); font-weight: 500 }
+
+.laudo .cta2 { position: relative; background: radial-gradient(120% 80% at 50% 0%, rgba(222, 176, 54, .22), transparent 60%), linear-gradient(170deg, #1e1a10, #111113); border: 2px solid var(--gold); border-radius: 22px; padding: 22px 18px 18px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 0 0 6px rgba(222, 176, 54, .10), 0 18px 50px rgba(222, 176, 54, .18); scroll-margin-top: 16px }
+.laudo .cta-tag { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .1em; color: var(--bg); background: var(--gold); border-radius: 999px; padding: 4px 12px }
+.laudo .cta-h { font-family: var(--display); font-size: clamp(26px, 7vw, 32px); line-height: 1.12; margin: 0; text-wrap: balance }
+.laudo .cta-h em { font-style: normal; color: var(--gold) }
+.laudo .cta-me { display: grid; grid-template-columns: 92px 1fr; gap: 14px; align-items: center }
+.laudo .cta-photo { position: relative; width: 92px; height: 92px }
+.laudo .cta-photo img { width: 92px; height: 92px; border-radius: 50%; object-fit: cover; object-position: 50% 18%; border: 3px solid var(--gold) }
+.laudo .live { position: absolute; left: 50%; bottom: -8px; transform: translateX(-50%); display: flex; align-items: center; gap: 5px; white-space: nowrap; font-size: 10.5px; font-weight: 700; letter-spacing: .06em; color: #fff; background: #d93a2f; border-radius: 999px; padding: 3px 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, .4) }
+.laudo .live i { width: 7px; height: 7px; border-radius: 50%; background: #fff; animation: laudo-blink 1.2s infinite }
+.laudo .cta-me strong { display: block; font-size: 17px }
+.laudo .cta-me span { font-size: 13.5px; color: var(--muted) }
+.laudo .cta-p { margin: 0; color: var(--ink) }
+.laudo .cta-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px }
+.laudo .cta-list li { position: relative; padding-left: 30px; font-size: 15px }
+.laudo .cta-list li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 21px; height: 21px; border-radius: 50%; background: var(--gold); color: var(--bg); font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center }
+.laudo .bigbtn { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; gap: 12px; text-decoration: none; color: #0c0c0e; background: linear-gradient(180deg, #f0c84e, #deb036); border-radius: 16px; padding: 20px 16px; min-height: 76px; font-weight: 800; font-size: 17px; letter-spacing: .02em; text-align: left; box-shadow: 0 10px 30px rgba(222, 176, 54, .45); animation: laudo-pulse 1.8s infinite }
+.laudo .bigbtn .t { display: flex; flex-direction: column; gap: 3px }
+.laudo .bigbtn small { font-weight: 500; font-size: 13px; letter-spacing: 0; color: #3a3020 }
+.laudo .bigbtn::after { content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .55), transparent); transform: skewX(-20deg); animation: laudo-shine 2.6s infinite }
+.laudo .bigbtn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px }
+.laudo .cta-note { margin: -4px 0 0; text-align: center; font-size: 13px; color: var(--muted) }
+.laudo .cta-or { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--muted) }
+.laudo .cta-or::before, .laudo .cta-or::after { content: ""; flex: 1; height: 1px; background: var(--line) }
+.laudo .stickybar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: linear-gradient(180deg, rgba(12, 12, 14, 0), rgba(12, 12, 14, .92) 30%); transform: translateY(120%); transition: transform .35s ease }
+.laudo .stickybar.on { transform: none }
+.laudo .stickybar a { max-width: 612px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; color: #0c0c0e; background: var(--gold); border-radius: 14px; padding: 14px; font-weight: 800; font-size: 15.5px; box-shadow: 0 8px 24px rgba(222, 176, 54, .4); animation: laudo-pulse 1.8s infinite }
+@keyframes laudo-pulse { 0% { box-shadow: 0 0 0 0 rgba(222, 176, 54, .65), 0 10px 30px rgba(222, 176, 54, .4) } 70% { box-shadow: 0 0 0 16px rgba(222, 176, 54, 0), 0 10px 30px rgba(222, 176, 54, .4) } 100% { box-shadow: 0 0 0 0 rgba(222, 176, 54, 0), 0 10px 30px rgba(222, 176, 54, .4) } }
+@keyframes laudo-shine { 0% { left: -60% } 55%, 100% { left: 130% } }
+@keyframes laudo-blink { 50% { opacity: .25 } }
+@media (prefers-reduced-motion: reduce) { .laudo .bigbtn, .laudo .stickybar a, .laudo .live i { animation: none } .laudo .bigbtn::after { display: none } .laudo .stickybar { transition: none } }
+.laudo .hero-art { border-radius: 20px; overflow: hidden; border: 1px solid rgba(222, 176, 54, .35); box-shadow: 0 14px 40px rgba(0, 0, 0, .45), 0 0 0 4px rgba(222, 176, 54, .06); margin-bottom: 18px; background: #111114 }
+.laudo .hero-art svg { display: block; width: 100%; height: auto }
+.laudo .hv-l { font: 600 12px var(--body); fill: #a8a398 }
+.laudo .hv-tags text { font: 600 16px var(--body); fill: #f2efe8 }
+.laudo .hv-flow { animation: laudo-hvflow 2.2s linear infinite }
+.laudo .hv-pulse { transform-origin: 258px 148px; animation: laudo-hvpulse 2.2s ease-in-out infinite }
+@keyframes laudo-hvflow { to { stroke-dashoffset: -60 } }
+@keyframes laudo-hvpulse { 50% { transform: scale(1.18); opacity: .7 } }
+@media (prefers-reduced-motion: reduce) { .laudo .hv-flow, .laudo .hv-pulse { animation: none } }
